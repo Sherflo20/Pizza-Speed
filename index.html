@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/imagen.png" type="image/png">
+    <title>Pizza Speed</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white; /* Fondo blanco */
+            color: black; /* Texto negro */
+        }
+
+        header {
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+              
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            color: white; /* Color de texto blanco para el encabezado */
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .logo {
+            width: 100px; /* Ajusta el tamaño según sea necesario */
+            height: 100px; /* Ajusta el tamaño según sea necesario */
+            border-radius: 50%; /* Borde circular */
+            display: block; /* Para que se muestre en su propia línea */
+            margin: 0 auto 10px; /* Centrar la imagen y agregar espacio debajo */
+        }
+
+        .content {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); 
+            border-radius: 10px;
+            max-width: 900px;
+            margin: 20px auto; 
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: red;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            color: white;
+        }
+
+        .pizza-list {
+            list-style-type: none; /* Sin viñetas */
+            padding: 0;
+            text-align: left; /* Alinea el texto a la izquierda */
+        }
+
+        .pizza-list li {
+            margin: 10px 0;
+            font-size: 1.2em;
+            font-family: 'Verdana', sans-serif; /* Cambiar fuente de los nombres de las pizzas */
+            font-weight: bold;
+        }
+
+        .pizza-list img {
+            display: block;
+            max-width: 50%; /* Ajusta el tamaño de la imagen al contenedor */
+            max-height: 300px; /* Altura máxima aumentada a 500px */
+            margin: 10px 0; /* Espaciado vertical */
+        }
+        .space{
+            margin-bottom: 70px;
+        }
+
+        .pizza-list {
+            list-style-type: none; /* Sin viñetas */
+            padding: 0;
+            margin: 0;
+        }
+
+        .pizza-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        .pizza-item img {
+            max-width: 150px; /* Ajusta el tamaño de las imágenes */
+            margin-right: 20px; /* Espaciado entre la imagen y el texto */
+            border-radius: 8px;
+        }
+
+        .pizza-details {
+            max-width: 600px; /* Limita el ancho del texto */
+        }
+
+        .pizza-name {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin: 0 0 5px 0;
+        }
+
+        .pizza-sub {
+            margin: 0;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="images/logo.png" alt="Logo de Pizza Speed" class="logo">
+        <h1>Pizza Speed</h1>
+        <nav>
+            <a href="#menu">🍕Menú</a>
+            <a href="#sobre-nosotros">👋Sobre Nosotros</a>
+            <a href="#contacto">📞Contacto</a>
+            <a href="#pqr">📝PQR</a>
+        </nav>
+    </header>
+
+<div class="content">
+    <section id="sobre-nosotros">
+        <h2>👋Sobre Nosotros</h2>
+        <p>La Mejor Pizzería nació de la pasión por la cocina de nuestra abuela, quien siempre nos enseñó a hacer la mejor masa y a utilizar los ingredientes más frescos...</p>
+    </section>
+
+    <section id="mision">
+        <ol><h2>Misión</h2></ol>
+        <p>Ofrecer pizzas de alta calidad, preparadas con ingredientes frescos y ser entregadas rápidamente para satisfacer las necesidades de nuestros clientes y brindarles una experiencia gastronómica excepcional.</p>
+    </section>
+
+    <section id="vision" class="space">
+        <ol><h2>Visión</h2></ol>
+        <p>Convertirnos en la pizzería líder a nivel nacional, reconocida por nuestra innovación y compromiso con el consumidor, ofreciendo una experiencia gastronómica inolvidable en cada entrega.</p>
+    </section>
+
+    <section id="menu"  class="space">
+        <h2>🍕 Menú</h2>
+        <ul class="pizza-list">
+            <li class="pizza-item">
+                <img src="images/pepperoni.png" alt="Pizza Pepperoni">
+                <div class="pizza-details">
+                    <p class="pizza-name">Pizza Pepperoni</p>
+                    <p class="pizza-ingredients">Ingredientes: Salsa de tomates frescos, Mozzarella, Pepperoni (salchicha italiana ahumada), Aceite de oliva.</p>
+                    <p class="pizza-sub">Porción: $13.000</p>
+                    <p class="pizza-sub">Mediana: $48.000</p>
+                    <p class="pizza-sub">Grande: $63.000</p>
+                </div>
+            </li>
+            <li class="pizza-item">
+                <img src="images/margarita.png" alt="Pizza Margarita">
+                <div class="pizza-details">
+                    <p class="pizza-name">Pizza Margarita</p>
+                    <p>Ingredientes: Salsa de tomates frescos, Mozzarella, Albahaca, Aceite de oliva.</p>
+                    <p class="pizza-sub">Porción: $14.000</p>
+                    <p class="pizza-sub">Mediana: $52.000</p>
+                    <p class="pizza-sub">Porción: $74.000</p>
+                </div>
+            </li>
+            <li class="pizza-item">
+                <img src="images/napolitana.png" alt="Pizza Napolitana">
+                <div class="pizza-details">
+                    <p class="pizza-name">Pizza Napolitana</p>
+                    <p>Ingredientes: Salsa de tomates frescos, Mozzarella, Aceitunas, Albahaca fresca, Aceite de oliva.</p>
+                    <p class="pizza-sub">Porción: $14.000</p>
+                    <p class="pizza-sub">Mediana: $52.000</p>
+                    <p class="pizza-sub">Grande: $74.000</p>
+                </div>
+            </li>
+            <li class="pizza-item">
+                <img src="images/hawaiana.png" alt="Pizza Hawaiana">
+                <div class="pizza-details">
+                    <p class="pizza-name">Pizza Hawaiana</p>
+                    <p>Ingredientes: Salsa de tomates frescos, Albahaca, Jamón de alta calidad, Piña en almíbar, Mozzarella.</p>
+                    <p class="pizza-sub">Porción: $11.000</p>
+                    <p class="pizza-sub">Mediana: $36.000</p>
+                    <p class="pizza-sub">Grande: $49.000</p>
+                </div>
+            </li>
+            <li class="pizza-item">
+                <img src="images/champinones.png" alt="Pizza Pollo con Champiñones">
+                <div class="pizza-details">
+                    <p class="pizza-name">Pizza Pollo con Champiñones</p>
+                    <p>Ingredientes: Salsa de tomates frescos, Mozzarella, Pollo, Champiñones frescos, Aceite de oliva.</p>
+                    <p class="pizza-sub">Porción: $13.000</p>
+                    <p class="pizza-sub">Mediana: $48.000</p>
+                    <p class="pizza-sub">Grande: $63.000</p>
+                </div>
+            </li>
+            <li class="pizza-item">
+                <img src="images/estofada.png" alt="Pizza Estofada">
+                <div class="pizza-details">
+                    <p class="pizza-name">Pizza Estofada</p>
+                    <p>Ingredientes: Salsa de tomates frescos, Mozzarella, Carne, Pollo, Maíz dulce, Pimentón rojo, Champiñones frescos, Tocineta, Queso crema.</p>
+                    <p class="pizza-sub">Porción: $17.000</p>
+                    <p class="pizza-sub">Mediana: $62.000</p>
+                    <p class="pizza-sub">Grande: $105.500</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section id="contacto" class="space">
+        <h2>📞Contacto</h2>
+        <p>Estamos ubicados: <a href="https://www.google.com/maps/place/Cl.+50,+Palmira,+Valle+del+Cauca/@3.5443589,-76.3077515,17z/data=!4m6!3m5!1s0x8e3a0491fc3b8b0b:0x9c1167333cbd2574!8m2!3d3.5447203!4d-76.305713!16s%2Fg%2F1v3j00gr?hl=es&entry=ttu&g_ep=EgoyMDI0MTExMy4xIKXMDSoASAFQAw%3D%3D">Calle 50 Transversal #39 - 02</a>.</p>
+        <p>Llámanos al: <strong>+57 313 6432783</strong>.</p>
+    </section>
+
+    <section id="pqr" class="space">
+        <h2>📝Preguntas, Quejas y Reclamos</h2>
+        <p>Tu opinión es muy importante para nosotros. Por favor, completa el formulario a continuación:</p>
+        <form action="/submit-pqr" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" placeholder="Escribe tu correo" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="2" placeholder="Redacta tu mensaje..." required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Pizza Speed. Todos los derechos reservados.</p>
+    <p>Síguenos en nuestras redes sociales: 
+        <a href="https://facebook.com" target="_blank" style="color: #fff;">Facebook</a> | 
+        <a href="https://instagram.com" target="_blank" style="color: #fff;">Instagram</a> | 
+        <a href="https://twitter.com" target="_blank" style="color: #fff;">Twitter</a>
+    </p>
+</footer>
+
+</body>
+</html>
